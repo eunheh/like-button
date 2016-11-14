@@ -13,7 +13,8 @@ function MainController ($scope) {
     $scope.addLike = function () {
       if (add === true) {
         var newNumber = ++$scope.number;
-        if (newNumber === 1) {
+        if (newNumber < 0){
+        } else if (newNumber === 1) {
           $scope.likesMsg = `${newNumber} Like`;
         } else {
           $scope.likesMsg = `${newNumber} Likes`;
