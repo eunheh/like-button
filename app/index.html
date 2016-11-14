@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Project</title>
+    <title>Like Button</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <div class="container">
-      <p>Welcome to your life.</p>
-    </div>
-    <script src="js/bundle.js"></script>
-  </body>
+  <body ng-app="app">
+
+   <div class="container" ng-controller="MainController">
+  		<button class="like-button" type="text" ng-click="addLike()">{{number}} Likes</button>
+      <!-- <button class="toggle-button" type="text" ng-click="addLike()">Toggle</button> -->
+
+   </div>
+
+   <script src="js/bundle.js"></script>
+
+ </body>
 </html>
