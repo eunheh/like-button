@@ -6,7 +6,7 @@ function MainController ($scope) {
   $scope.likesMsg = `0 Likes`;
 
   var add = true;
-  $scope.toggle = function (change) {
+  $scope.toggle = function () {
     add = !add;
   }
 
